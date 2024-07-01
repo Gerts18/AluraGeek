@@ -1,0 +1,12 @@
+:root {
+    --color-principal: #5D04D9;
+    --color-secundario : #0331BC;
+}
+
+/*Encabezado*/
+
+.encabezado {
+   display: flex;
+   justify-content: center;
+    background-color: var(--color-principal);
+}

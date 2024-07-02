@@ -3,7 +3,7 @@
 
 :root {
     --color-principal: #5D04D9;
-    --color-secundario : #0331BC;
+    --color-secundario : #03318C;
     --fuente-texto: "IBM Plex Mono", monospace;
     --fuente-titulo: "Press Start 2P", system-ui;
 }
@@ -164,7 +164,7 @@ main{
 }
 
 .campo-completo{
-    width: 85%;
+    width: 80%;
     border-radius: 20px;
     border-style: solid;
     border-color: var(--color-secundario);
@@ -180,4 +180,37 @@ main{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding-left: 2px;
+}
+
+.boton{
+    width: 120px;
+    height: 35px;
+    border-style: solid;
+    border-color: var(--color-secundario);
+    border-radius: 10px;
+    font-family: var(--fuente-texto);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.boton,.icono-eliminar:hover{
+    cursor: pointer;
+}
+
+.b-enviar{
+    background-color: var(--color-secundario);
+    color: #FFF;
+}
+
+.b-limpiar{
+    color: var(--color-secundario);
 }

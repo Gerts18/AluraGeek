@@ -143,6 +143,12 @@ main{
     width: 24px;
 }
 
+.mensaje{
+    font-family: var(--fuente-texto);
+    color: var(--color-secundario);
+    font-weight: bolder;
+}
+
 /*Form*/
 
 .agregar-productos{

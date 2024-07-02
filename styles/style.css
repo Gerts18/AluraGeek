@@ -8,6 +8,15 @@
     --fuente-titulo: "Press Start 2P", system-ui;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /*Encabezado*/
 
 .encabezado {
@@ -231,6 +240,7 @@ main{
     box-shadow: 0px -10px 9.5px 0px rgba(0, 0, 0, 0.25);
     padding: 64px;
     gap: 15px;
+    margin-top: auto;
 }
 
 .texto {
@@ -253,4 +263,79 @@ main{
     font-weight: 200;
     line-height: 14px;
     text-transform: uppercase;
+}
+
+.b-tap, .b-cerrar{
+    display: none;
+}
+
+
+/*Diseño para celular*/
+@media only screen and (max-width: 790px) {
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion-productos{
+        max-width: 90%;
+        z-index: -1;
+    }
+
+    .agregar-productos{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 4px solid black; 
+        border-radius: 10px;
+        padding: 20px; 
+        width: 100%;
+        gap: 20px;
+    }
+
+    .agregar-productos h1{
+        font-size: 18px;
+    }
+
+    .b-tap{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        border-radius: 50px;
+        background-color: var(--color-principal);
+        padding: 10px;
+        position: fixed;
+        top: 50%;
+        right: 2%; 
+        color: white;
+        font-family: var(--fuente-texto);
+        font-size: 10px;
+    }
+
+    .b-cerrar{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        position: fixed;
+        left: 3%;
+        top:2%;
+        background-color: var(--color-secundario);
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .b-cerrar img {
+        width: 70%;
+        height: 70%;
+    }
+
 }

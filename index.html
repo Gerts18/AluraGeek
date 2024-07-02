@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <img src="imagenes/logo1.svg" alt="">
+    </header>
+
+    <main>
+        <section class="seccion-productos" data-productos>
+            <h1 class="titulo">MIS PRODUCTOS:</h1>
+            <ul class="lista-productos">
+
+                <!-- <h2 class="mensaje" id="mensaje">No se han agregado productos ...</h2> -->
+
+                <li class="producto">
+                    <img class="imagen-producto" src="https://i.ibb.co/3NQ4hnH/Playera-Spiderman.jpg" alt="">
+                    <h2 class="nombre-producto">Playera Spiderman</h2>
+                    <div class="info">
+                        <p class="precio">$ 160 MXN</p>
+                        <img class="icono-eliminar" src="./imagenes/icon_trash.svg" alt="">
+                    </div>  
+                </li> 
+
+                <li class="producto">
+                    <img class="imagen-producto" src="https://i.ibb.co/NrY6mgg/Juguete-Spiderman.jpg" alt="">
+                    <h2 class="nombre-producto">Figura Spider-man</h2>
+                    <div class="info">
+                        <p class="precio">$ 800 MXN</p>
+                        <img class="icono-eliminar" src="./imagenes/icon_trash.svg" alt="">
+                    </div>  
+                </li> 
+
+            </ul>
+        </section>  
+
+        <button class="b-tap"><img src="./imagenes/add-icon.svg" alt=""></button>
+
+        <section class="agregar-productos">
+            <button class="b-cerrar"><img src="./imagenes/close-icon.svg" alt=""></button>
+            <h1 class="titulo"> AGREGAR PRODUCTO:</h1>
+            <form action="" class="formulario">
+
+                <fieldset class="campo-formulario">
+                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="campo-formulario">
+                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="text" minlength="1" maxlength="6" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="campo-formulario">
+                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="text" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <div class="contenedor-botones">
+                    <button class="boton b-enviar">Enviar</button>
+                    <button class="boton b-limpiar">Limpiar</button>
+                </div>
+
+            </form>
+        </section>
+        
+
+    </main>
+
+    <footer class="pieDePagina">
+        <img src="./imagenes/logo1.svg" alt="">
+        <p class="texto t-principal">DESARROLLADO POR GERMAN TORRES SIERRA</p>
+        <P class="texto t-secundario">ALURA LATAM - 2024</P>
+    </footer>
+
+</body>
+</html>

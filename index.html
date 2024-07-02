@@ -15,7 +15,7 @@
 
     <main>
         <section class="seccion-productos" data-productos>
-            <h1 class="titulo">Mis productos:</h1>
+            <h1 class="titulo">MIS PRODUCTOS:</h1>
             <ul class="lista-productos">
 
                 <li class="producto">
@@ -57,9 +57,27 @@
             </ul>
         </section>
 
-        <form action="" class="formulario">
+        <section class="agregar-productos">
+            <h1 class="titulo"> AGREGAR PRODUCTO:</h1>
+            <form action="" class="formulario">
 
-        </form>
+                <fieldset class="campo-formulario">
+                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="campo-formulario">
+                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="text" minlength="1" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="campo-formulario">
+                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="text" required/>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+            </form>
+        </section>
+        
 
     </main>
 

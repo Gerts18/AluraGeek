@@ -61,14 +61,6 @@ button {
 	background-color: unset;
 }
 
-input {
-	border: none;
-	color: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	font-family: inherit;
-}
-
 textarea {
 	border: none;
 	color: inherit;

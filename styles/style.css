@@ -309,6 +309,7 @@ main{
 
     .agregar-productos h1{
         font-size: 18px;
+        padding-bottom: 10px;
     }
 
     .b-tap{

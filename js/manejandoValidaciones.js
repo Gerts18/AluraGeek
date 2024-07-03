@@ -32,6 +32,6 @@ function verificarCampo(campo){
         mensaje.textContent = '';
       }
 
-    console.log(campo.validity);
+   // console.log(campo.validity);
 }
 

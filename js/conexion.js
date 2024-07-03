@@ -10,7 +10,7 @@ async function obtenerProductos(){
 }
 
 async function enviarProducto(imagen, nombre, precio){
-    const conexion = await fetch(endpoint, {
+    const conexion = await fetch(endpoint, { //Creando conexion para enviar datos
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -26,7 +26,7 @@ async function enviarProducto(imagen, nombre, precio){
 }
 
 async function eliminarProducto(id){
-    const conexion = await fetch(`${endpoint}/${id}`, {
+    const conexion = await fetch(`${endpoint}/${id}`, { //Creando conexion para eliminar datos
         method: "DELETE"
     })
 

@@ -6,6 +6,7 @@
     <title>AluraGeek</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./imagenes/favicon.png" type="image/x-icon" >
 </head>
 <body>
 
@@ -28,7 +29,7 @@
         <section class="agregar-productos" id="agregar-prod">
             <button class="b-cerrar" id="close"><img src="./imagenes/close-icon.svg" alt=""></button>
             <h1 class="titulo"> AGREGAR PRODUCTO:</h1>
-            <form class="formulario" data-formulario>
+            <form action="" class="formulario" data-formulario>
 
                 <fieldset class="campo-formulario">
                     <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required data-nombre/>
@@ -46,7 +47,7 @@
                 </fieldset>
 
                 <div class="contenedor-botones">
-                    <button class="boton b-enviar" id="sent" type="submit">Enviar</button>
+                    <button class="boton b-enviar" id="send" type="submit">Enviar</button>
                     <button class="boton b-limpiar" id="clear" type="reset">Limpiar</button>
                 </div>
 
@@ -67,5 +68,6 @@
     <script src="./js/enviarProductos.js" type="module"></script>
     <script src="./js/manejandoValidaciones.js"></script>
     <script src="./js/eliminarProducto.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

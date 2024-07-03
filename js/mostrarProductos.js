@@ -1,9 +1,10 @@
 import { conexiones } from "./conexion.js";
+import mostrarMensajePersonalizado from "./mensajesCustom.js";
 
 const listaProductos = document.querySelector("[data-productos]");
 const mensaje = document.querySelector("#mensaje");
 
-function crearProducto(imagen,nombre,precio, id){
+function crearProducto(imagen,nombre,precio, id){ //Funcion para crear y adjuntar un producto en mi pagina
     const producto = document.createElement("li");
     producto.className = "producto";
     producto.setAttribute("id", id)
@@ -30,10 +31,12 @@ async function mostrarProductos (){
             listaProductos.appendChild(crearProducto(producto.imagen,producto.nombre,producto.precio, producto.id));
         });
 
+        mostrarMensajePersonalizado('bienvenida');
+
     }catch{
         mensaje.style.display = "block";
 
-        /*Mostrar mensaje de error personalizado */
+        mostrarMensajePersonalizado('errorServidor');
     }
 }
 

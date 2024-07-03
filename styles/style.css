@@ -269,6 +269,16 @@ main{
     display: none;
 }
 
+.mensaje-error {
+    font-family: var(--fuente-texto);
+    color: var(--color-principal);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px; /* Espacio adicional */
+    line-height: 1.5; /* Altura de línea para evitar amontonamiento */
+    display: block; /* Hace que el span ocupe toda la anchura disponible */
+}
+
 
 /*Diseño para celular*/
 @media only screen and (max-width: 790px) {

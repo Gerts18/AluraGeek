@@ -4,7 +4,7 @@ import mostrarMensajePersonalizado from "./mensajesCustom.js";
 const formulario = document.querySelector("[data-formulario]");
 
 async function crearProducto (e) {
-
+    e.preventDefault();
     const nombre= document.querySelector("[data-nombre]").value;
     const imagen = document.querySelector("[data-imagen]").value;
     const precio = document.querySelector("[data-precio]").value;
@@ -13,7 +13,6 @@ async function crearProducto (e) {
         await conexiones.enviarProducto(imagen, nombre, precio);
         await mostrarMensajePersonalizado("productoCreado", e) 
         formulario.reset();
-        e.preventDefault();
     }catch (error) {
         await mostrarMensajePersonalizado('errorCrearProducto', error);
     }
@@ -21,5 +20,4 @@ async function crearProducto (e) {
 
 formulario.addEventListener('submit', (e) => {
     crearProducto(e);
-    e.preventDefault();
 })

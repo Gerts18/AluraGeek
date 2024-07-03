@@ -1,13 +1,13 @@
 {
   "productos": [
     {
-      "id": "1",
+      "id": 1,
       "nombre": "Playera Spider-Man",
       "precio": "$ 160 MXN",
       "imagen": "https://i.ibb.co/3NQ4hnH/Playera-Spiderman.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "nombre": "Figura Spider-Man",
       "precio": "$ 800 MXN",
       "imagen": "https://i.ibb.co/NrY6mgg/Juguete-Spiderman.jpg"

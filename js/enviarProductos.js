@@ -11,7 +11,7 @@ async function crearProducto (evento) {
 
     try{
         await conexiones.enviarProducto(imagen.value, nombre.value, precio.value);
-
+        /*Mensaje de producto creado */
     }catch (evento) {
         /*Mensaje personalizado*/
     }

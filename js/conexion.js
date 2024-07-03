@@ -25,7 +25,17 @@ async function enviarProducto(imagen, nombre, precio){
     return datos;
 }
 
+async function eliminarProducto(id){
+    const conexion = await fetch(`${endpoint}/${id}`, {
+        method: "DELETE"
+    })
+
+    const datos = conexion.json();
+
+    return datos;
+}
+
 export const conexiones = {
-    obtenerProductos, enviarProducto
+    obtenerProductos, enviarProducto, eliminarProducto
 };
 

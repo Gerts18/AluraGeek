@@ -9,7 +9,23 @@ async function obtenerProductos(){
 
 }
 
+async function enviarProducto(imagen, nombre, precio){
+    const conexion = await fetch(endpoint, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            nombre: nombre,
+            imagen: imagen,
+            precio: `$ ${precio} MXN`
+        })
+    });
+
+    const datos = conexion.json();
+
+    return datos;
+}
+
 export const conexiones = {
-    obtenerProductos
+    obtenerProductos, enviarProducto
 };
 

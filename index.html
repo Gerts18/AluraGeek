@@ -28,26 +28,26 @@
         <section class="agregar-productos" id="agregar-prod">
             <button class="b-cerrar" id="close"><img src="./imagenes/close-icon.svg" alt=""></button>
             <h1 class="titulo"> AGREGAR PRODUCTO:</h1>
-            <form action="" class="formulario">
+            <form class="formulario" data-formulario>
 
                 <fieldset class="campo-formulario">
-                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required/>
+                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required data-nombre/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <fieldset class="campo-formulario">
-                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="text" minlength="1" maxlength="6" required/>
+                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="text" minlength="1" maxlength="6" required data-precio=""/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <fieldset class="campo-formulario">
-                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="text" required/>
+                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="text" required data-imagen/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <div class="contenedor-botones">
-                    <button class="boton b-enviar">Enviar</button>
-                    <button class="boton b-limpiar">Limpiar</button>
+                    <button class="boton b-enviar" id="sent" type="submit">Enviar</button>
+                    <button class="boton b-limpiar" id="clear" type="reset">Limpiar</button>
                 </div>
 
             </form>
@@ -64,5 +64,6 @@
 
     <script src="./js/funcionesCelular.js"></script>
     <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/enviarProductos.js" type="module"></script>
 </body>
 </html>

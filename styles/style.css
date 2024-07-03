@@ -117,7 +117,7 @@ main{
 
 .imagen-producto{
     width: 100%;
-    height: auto;
+    max-height: 190px;
     border-radius: 10px;
     border: 3px solid #000;
 }

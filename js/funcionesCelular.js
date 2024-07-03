@@ -11,3 +11,4 @@ botonCerrar.addEventListener('click', () => {
     seccionAgregarProducto.style.display = "none";
     botonAgregarProducto.style.display = "block";
 })
+

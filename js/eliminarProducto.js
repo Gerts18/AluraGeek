@@ -13,6 +13,7 @@ async function eliminarProducto(id){
 } 
 
 listaProductos.addEventListener('click', async (evento) => {
+    evento.preventDefault();
     if(evento.target.classList.contains("icono-eliminar")){
         evento.preventDefault();
         const idProducto = evento.target.parentNode.id;

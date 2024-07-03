@@ -6,6 +6,7 @@
     <title>AluraGeek</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./imagenes/favicon.png" type="image/x-icon" >
 </head>
 <body>
 
@@ -14,58 +15,40 @@
     </header>
 
     <main>
-        <section class="seccion-productos" data-productos>
+        <section class="seccion-productos">
             <h1 class="titulo">MIS PRODUCTOS:</h1>
-            <ul class="lista-productos">
+            <ul class="lista-productos" data-productos>
 
-                <!-- <h2 class="mensaje" id="mensaje">No se han agregado productos ...</h2> -->
-
-                <li class="producto">
-                    <img class="imagen-producto" src="https://i.ibb.co/3NQ4hnH/Playera-Spiderman.jpg" alt="">
-                    <h2 class="nombre-producto">Playera Spiderman</h2>
-                    <div class="info">
-                        <p class="precio">$ 160 MXN</p>
-                        <img class="icono-eliminar" src="./imagenes/icon_trash.svg" alt="">
-                    </div>  
-                </li> 
-
-                <li class="producto">
-                    <img class="imagen-producto" src="https://i.ibb.co/NrY6mgg/Juguete-Spiderman.jpg" alt="">
-                    <h2 class="nombre-producto">Figura Spider-man</h2>
-                    <div class="info">
-                        <p class="precio">$ 800 MXN</p>
-                        <img class="icono-eliminar" src="./imagenes/icon_trash.svg" alt="">
-                    </div>  
-                </li> 
+                <h2 class="mensaje" id="mensaje">No se han agregado productos ...</h2> 
 
             </ul>
         </section>  
 
-        <button class="b-tap"><img src="./imagenes/add-icon.svg" alt=""></button>
+        <button class="b-tap" id="add"><img src="./imagenes/add-icon.svg" alt=""></button>
 
-        <section class="agregar-productos">
-            <button class="b-cerrar"><img src="./imagenes/close-icon.svg" alt=""></button>
+        <section class="agregar-productos" id="agregar-prod">
+            <button class="b-cerrar" id="close"><img src="./imagenes/close-icon.svg" alt=""></button>
             <h1 class="titulo"> AGREGAR PRODUCTO:</h1>
-            <form action="" class="formulario">
+            <form action="" class="formulario" data-formulario>
 
                 <fieldset class="campo-formulario">
-                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required/>
+                    <input name="nombre" id="nombre" class="campo-completo" placeholder="nombre.." type="text" minlength="5" maxlength="20" required data-nombre/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <fieldset class="campo-formulario">
-                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="text" minlength="1" maxlength="6" required/>
+                    <input name="precio" id="precio" class="campo-completo" placeholder="precio.." type="number" minlength="1" maxlength="6" required data-precio=""/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <fieldset class="campo-formulario">
-                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="text" required/>
+                    <input name="imagen" id="imagen" class="campo-completo" placeholder="imagen.." type="url" required data-imagen/>
                     <span class="mensaje-error"></span>
                 </fieldset>
 
                 <div class="contenedor-botones">
-                    <button class="boton b-enviar">Enviar</button>
-                    <button class="boton b-limpiar">Limpiar</button>
+                    <button class="boton b-enviar" id="send" type="submit">Enviar</button>
+                    <button class="boton b-limpiar" id="clear" type="reset">Limpiar</button>
                 </div>
 
             </form>
@@ -80,5 +63,11 @@
         <P class="texto t-secundario">ALURA LATAM - 2024</P>
     </footer>
 
+    <script src="./js/funcionesCelular.js"></script>
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/enviarProductos.js" type="module"></script>
+    <script src="./js/manejandoValidaciones.js"></script>
+    <script src="./js/eliminarProducto.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

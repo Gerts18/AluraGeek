@@ -117,7 +117,7 @@ main{
 
 .imagen-producto{
     width: 100%;
-    height: auto;
+    max-height: 190px;
     border-radius: 10px;
     border: 3px solid #000;
 }
@@ -269,6 +269,16 @@ main{
     display: none;
 }
 
+.mensaje-error {
+    font-family: var(--fuente-texto);
+    color: var(--color-principal);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px; /* Espacio adicional */
+    line-height: 1.5; /* Altura de línea para evitar amontonamiento */
+    display: block; /* Hace que el span ocupe toda la anchura disponible */
+}
+
 
 /*Diseño para celular*/
 @media only screen and (max-width: 790px) {
@@ -280,7 +290,6 @@ main{
 
     .seccion-productos{
         max-width: 90%;
-        z-index: -1;
     }
 
     .agregar-productos{
@@ -300,6 +309,7 @@ main{
 
     .agregar-productos h1{
         font-size: 18px;
+        padding-bottom: 10px;
     }
 
     .b-tap{
@@ -333,9 +343,11 @@ main{
         align-items: center; 
     }
 
+
     .b-cerrar img {
         width: 70%;
         height: 70%;
     }
+
 
 }

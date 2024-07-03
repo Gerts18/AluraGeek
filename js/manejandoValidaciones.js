@@ -22,8 +22,12 @@ function verificarCampo(campo){
     if(campo.name == "precio" && campo.value.length > 6){
         campo.setCustomValidity("El precio no puede tener mas de 6 digitos")
     }
-    if(campo.name == "nombre" && campo.value.length < 5){
-        campo.setCustomValidity("El nombre del producto deber de ser de al menos 3 caracteres")
+    if(campo.name == "nombre"){
+        if(campo.value == ""){
+            campo.setCustomValidity("Completa este campo");
+        }else if( campo.value.length < 5){
+            campo.setCustomValidity("Nombre de minimo 5 caracteres");
+        }
     }
 
     if (!campo.validity.valid) {

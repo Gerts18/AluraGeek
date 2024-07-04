@@ -6,9 +6,11 @@ const listaProductos = document.querySelector("[data-productos]");
 async function eliminarProducto(id){
     try{
         await conexiones.eliminarProducto(id);
+        const producto = document.querySelector(`#${id}`);
+        listaProductos.removeChild(producto);
         await mostrarMensajePersonalizado('productoEliminado');
-    }catch{
-        await mostrarMensajePersonalizado('errorEliminar');
+    }catch(error){
+        await mostrarMensajePersonalizado('errorEliminar', error);
     };
 } 
 

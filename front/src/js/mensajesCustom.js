@@ -15,6 +15,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 title: '<h1 class="titulo">Error!</h1>',
                 html: '<p class="mensaje-error"> Parece ser que hubo un error con la conexion al servidor :( <br> Intenta de nuevo en unos minutos. </p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
+                icon: "error"
             });
             break;
 
@@ -23,6 +24,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 title: '<h1 class="titulo" style="font-size:16px">Producto Creado con Exito</h1>',
                 html: '<p class="mensaje-error"> Haz añadido un nuevo producto a tu lista. </p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
+                icon:"success"
             });
             break;
 
@@ -31,7 +33,8 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 title: '<h1 class="titulo">Error!</h1>',
                 html: `<p class="mensaje-error"> Parece que hubo un problema al crear el producto. <br> Intenta de nuevo mas tarde.</p>`,
                 confirmButtonText: '<p class="texto">Continuar</p>',
-                footer: `<p class="mensaje-error"> ${evento} </p>`
+                footer: `<p class="mensaje-error"> ${evento} </p>`,
+                icon: "error"
             });
             break;
 
@@ -50,6 +53,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 title: '<h1 class="titulo" style="font-size:16px">Producto Eliminado con Exito</h1>',
                 html: '<p class="mensaje-error"> Haz quitado un producto de tu lista. </p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
+                icon: "success"
             });
             break;
         case 'errorEliminar':
@@ -57,6 +61,8 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 title: '<h1 class="titulo" style="font-size:16px">Error!</h1>',
                 html: '<p class="mensaje-error"> Parece que hubo un problema al eliminar el producto.</p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
+                footer: `<p class="mensaje-error"> ${evento} </p>`,
+                icon: "error"
             });
             break;
     }

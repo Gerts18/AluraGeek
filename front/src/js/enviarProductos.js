@@ -1,23 +1,27 @@
 import { conexiones } from "./conexion.js";
 import mostrarMensajePersonalizado from "./mensajesCustom.js";
+import crearProducto from "./mostrarProductos.js";
 
 const formulario = document.querySelector("[data-formulario]");
+const listaProductos = document.querySelector("[data-productos]");
 
-async function crearProducto (e) {
+async function crearProd(e) {
     e.preventDefault();
     const nombre= document.querySelector("[data-nombre]").value;
     const imagen = document.querySelector("[data-imagen]").value;
     const precio = document.querySelector("[data-precio]").value;
 
     try{   
-        await conexiones.enviarProducto(imagen, nombre, precio);
-        await mostrarMensajePersonalizado("productoCreado", e) 
+        const producto = await conexiones.enviarProducto(imagen, nombre, precio);
         formulario.reset();
+        listaProductos.appendChild(crearProducto(producto.imagen,producto.nombre,producto.precio, producto.id));
+        await mostrarMensajePersonalizado("productoCreado", e) 
+        
     }catch (error) {
         await mostrarMensajePersonalizado('errorCrearProducto', error);
     }
 }
 
 formulario.addEventListener('submit', (e) => {
-    crearProducto(e);
+    crearProd(e);
 })

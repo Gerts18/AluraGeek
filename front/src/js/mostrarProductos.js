@@ -31,12 +31,12 @@ async function mostrarProductos (){
             listaProductos.appendChild(crearProducto(producto.imagen,producto.nombre,producto.precio, producto.id));
         });
 
-        mostrarMensajePersonalizado('bienvenida');
+        await mostrarMensajePersonalizado('bienvenida');
 
     }catch{
         mensaje.style.display = "block";
 
-        mostrarMensajePersonalizado('errorServidor');
+        await mostrarMensajePersonalizado('errorServidor');
     }
 }
 

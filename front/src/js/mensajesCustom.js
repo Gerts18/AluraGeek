@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2';
 
 export default async function mostrarMensajePersonalizado(caso, evento){
     switch(caso){
@@ -12,7 +13,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
         case "errorServidor":
             await Swal.fire({
                 title: '<h1 class="titulo">Error!</h1>',
-                html: '<p class="mensaje-error"> Parece ser que hubo un error con la conexion al servidor :( <br> Intenta de nuevo mas tarde. </p>',
+                html: '<p class="mensaje-error"> Parece ser que hubo un error con la conexion al servidor :( <br> Intenta de nuevo en unos minutos. </p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
             });
             break;

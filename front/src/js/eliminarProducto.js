@@ -1,4 +1,4 @@
-import { conexiones } from "./conexion.js   ";
+import { conexiones } from "./conexion.js";
 import mostrarMensajePersonalizado from "./mensajesCustom.js";
 
 const listaProductos = document.querySelector("[data-productos]");

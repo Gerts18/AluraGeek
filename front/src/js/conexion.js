@@ -1,4 +1,4 @@
-const endpoint = "https://alurageek-an1v.onrender.com/productos";
+const endpoint = import.meta.env.VITE_end_point;
 
 async function obtenerProductos(){
     const conexion = await fetch(endpoint); //Creando una conexion para solicitar los datos

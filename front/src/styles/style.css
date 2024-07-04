@@ -7,9 +7,13 @@
     --fuente-texto: "IBM Plex Mono", monospace;
     --fuente-titulo: "Press Start 2P", system-ui;
 }
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -42,6 +46,7 @@ main{
     margin: 20px;
     gap: 70px;
     margin-block: 60px;
+    max-width: 100%; 
 }
 
 /*Mostrar Productos*/
@@ -305,6 +310,8 @@ main{
         padding: 20px; 
         width: 100%;
         gap: 20px;
+
+        animation-duration: 2s;
     }
 
     .agregar-productos h1{
@@ -321,7 +328,7 @@ main{
         padding: 10px;
         position: fixed;
         top: 50%;
-        right: 2%; 
+        right: 4%; 
         color: white;
         font-family: var(--fuente-texto);
         font-size: 10px;
@@ -349,5 +356,67 @@ main{
         height: 70%;
     }
 
+    /*Animaciones*/
+    .mostrar{
+        display: block;
+        animation-duration: 0.8s;
+        animation-name: in;
+    }
 
-}
+    @keyframes in {
+        from {
+            margin-left: 100%;
+        }
+      
+        to {
+            margin-left: 0%;
+        }
+    }
+
+    .ocultar{
+        animation-duration: 0.8s;
+        animation-name: out;
+    }
+
+    @keyframes out {
+        from {
+            margin-left: 0%;
+        }
+      
+        to{
+            margin-left: 100%;
+        }
+    }
+
+    .oculto{
+        display: none;
+    }
+
+    .pop{
+        animation-name: pop;
+        animation-duration: 0.5s;
+        animation-direction: forwards;
+    }
+
+    @keyframes pop {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(0);
+        }
+    }
+
+    .unpop{
+        animation: unpop 0.5s forwards
+    }
+
+    @keyframes unpop {
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+}   

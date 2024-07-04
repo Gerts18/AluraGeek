@@ -5,7 +5,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
         case "bienvenida":
             await Swal.fire({
                 title: '<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;"> <img src="imagenes/corazones.svg" alt=""> <h1 class="titulo">Bienvenido</h1> </div>',
-                html: '<p class="mensaje-error"> Alura Geek te ofrece una manera sencilla de administrar tus productos, pudiendo agregarlos, eliminarlos y enlistarlos en una interfaz facil de usar y bien diseñada.</p>',
+                html: '<p class="mensaje-error"> Alura Geek te proporciona una forma sencilla y eficiente de gestionar tus productos. Con una interfaz intuitiva y bien diseñada, puedes agregar, eliminar y listar productos fácilmente.</p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
             });
             break;
@@ -13,7 +13,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
         case "errorServidor":
             await Swal.fire({
                 title: '<h1 class="titulo">Error!</h1>',
-                html: '<p class="mensaje-error"> Parece ser que hubo un error con la conexion al servidor :( <br> Intenta de nuevo en unos minutos. </p>',
+                html: '<p class="mensaje-error"> Parece ser que hubo un error con la conexion al servidor :( <br> Intenta de nuevo en un minuto. </p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
                 icon: "error"
             });
@@ -40,8 +40,8 @@ export default async function mostrarMensajePersonalizado(caso, evento){
 
         case 'eliminarProducto':
             const result = await Swal.fire({
-                title: '<h1 class="titulo" style="font-size:16px">¿Estas seguro de querer eliminar este producto?</h1>',
-                html: '<p class="mensaje-error">Esta accion es irreversible.</p>',
+                title: '<h1 class="titulo" style="font-size:16px">¿Estás seguro de que deseas eliminar este producto?</h1>',
+                html: '<p class="mensaje-error">Esta acción no se puede deshacer.</p>',
                 confirmButtonText: '<p class="texto">Continuar</p>',
                 showDenyButton: true,
                 denyButtonText: '<p class="texto">Cancelar</p>',

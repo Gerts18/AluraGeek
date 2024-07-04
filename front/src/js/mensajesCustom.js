@@ -45,6 +45,7 @@ export default async function mostrarMensajePersonalizado(caso, evento){
                 confirmButtonText: '<p class="texto">Continuar</p>',
                 showDenyButton: true,
                 denyButtonText: '<p class="texto">Cancelar</p>',
+                icon: "question"
             });
             return result.isConfirmed;
             

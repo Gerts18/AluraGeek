@@ -1,11 +1,15 @@
 ![logo1](https://github.com/Gerts18/AluraGeek/assets/105231388/871f3e4e-526a-42c7-82a4-30170db91bd9)<svg width="374" height="56" viewBox="0 0 374 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<h1>Administración de Productos - AluraGeek</h1>
+<h1>Pagina Web para Administración de Productos - AluraGeek</h1>
 <p>
 Este proyecto es una página web para la administración de productos, desarrollada con Vite, JavaScript vanilla, HTML y CSS. La aplicación sigue una lógica REST API para manejar productos a través de un servidor. Incluye funcionalidades para mostrar, agregar y eliminar productos, además de validaciones y notificaciones personalizadas.
 </p>
 
 ![Screenshot 2024-07-05 110003](https://github.com/Gerts18/AluraGeek/assets/105231388/e08d21b6-0b1d-4f2a-8e6e-e30bcc2e0ea4)
+
+<h2>Pruebas</h2>
+<p>Puedes acceder a la pagina muestra subida con el siguiente link: <a href="https://alura-geek-five-psi.vercel.app/">Alura Geek</a> </p>
+<p>Tambien puedes acceder al album usado para proporcionar las imagenes de los productos de este proyecto: <a href="https://ibb.co/album/C6kd6X">imgbb de Alura Geek</a> </p>
 
 <h2>Características</h2>
 <ul>
@@ -33,17 +37,25 @@ Este proyecto es una página web para la administración de productos, desarroll
   <h2>Instalación</h2>
     <ol>
         <li>Clona el repositorio:
-            <pre><code>git clone https://github.com/tu-usuario/tu-repositorio.git</code></pre>
+            <pre><code>git clone https://github.com/tu-usuario/AluraGeek.git</code></pre>
         </li>
         <li>Instala las dependencias:
-            <pre><code>cd tu-repositorio
-npm install</code></pre>
+            <pre><code>
+                cd servidor/front
+                npm install
+            </code></pre>
         </li>
         <li>Inicia el servidor json-server:
-            <pre><code>npm run server</code></pre>
+            <pre><code>
+                cd servidor
+                npx json-server --watch datos.json --port 3001
+            </code></pre>
         </li>
         <li>Inicia el proyecto con Vite:
-            <pre><code>npm run dev</code></pre>
+            <pre><code>
+                cd front
+                npm run dev
+            </code></pre>
         </li>
     </ol>
 
@@ -73,6 +85,8 @@ npm install</code></pre>
 
 ![responsive](https://github.com/Gerts18/AluraGeek/assets/105231388/a4bcfead-51f7-4f00-8d58-a5cfb4effea0)
 
-<h2>Pruebas</h2>
-<p>Puedes acceder a la pagina muestra subida con el siguiente link: <a href="https://alura-geek-five-psi.vercel.app/">Alura Geek</a> </p>
-<p>Tambien puedes acceder al repositorio de imagenes usado para proporcionar las imagenes de los productos de este proyecto: <a href="https://ibb.co/album/C6kd6X">imgbb de Alura Geek</a> </p>
+<h2>Contribuciones</h2>
+<p>Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de enviar un pull request.</p>
+
+<h2>Observaciones</h2>
+<p>Es de notar que el diseño va dirigido a productos Geek y de la cultura pop en general. Puedes cambiar el diseño a tu gusto para que se adapte al tipo de productos que quieres administrar.</p>

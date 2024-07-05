@@ -41,20 +41,20 @@ Este proyecto es una página web para la administración de productos, desarroll
         </li>
         <li>Instala las dependencias:
             <pre><code>
-                cd servidor/front
-                npm install
+            cd servidor/front
+            npm install
             </code></pre>
         </li>
         <li>Inicia el servidor json-server:
             <pre><code>
-                cd servidor
-                npx json-server --watch datos.json --port 3001
+            cd servidor
+            npx json-server --watch datos.json --port 3001
             </code></pre>
         </li>
         <li>Inicia el proyecto con Vite:
             <pre><code>
-                cd front
-                npm run dev
+            cd front
+            npm run dev
             </code></pre>
         </li>
     </ol>

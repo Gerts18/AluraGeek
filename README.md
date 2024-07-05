@@ -40,13 +40,16 @@ Este proyecto es una página web para la administración de productos, desarroll
             <pre><code>git clone https://github.com/tu-usuario/AluraGeek.git</code></pre>
         </li>
         <li>Instala las dependencias:
-            <pre><code> cd servidor/front<br>npm install</code></pre>
+            <pre><code>cd servidor/front </code></pre>
+            <pre><code>npm install </code></pre>
         </li>
         <li>Inicia el servidor json-server:
-            <pre><code>cd servidor<br>npx json-server --watch datos.json --port 3001</code></pre>
+            <pre><code>cd servidor </code></pre>
+            <pre><code>npx json-server --watch datos.json --port 3001 </code></pre>
         </li>
         <li>Inicia el proyecto con Vite:
-            <pre><code>cd front<br>npm run dev</code></pre>
+            <pre><code>cd front </code></pre>
+            <pre><code>npm run dev </code></pre>
         </li>
     </ol>
 

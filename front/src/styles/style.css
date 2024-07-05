@@ -170,7 +170,7 @@ main{
     flex-direction: column;
     gap: 40px;
     padding: 40px;
-    max-width: 50%;
+    max-width: 90%;
 }
 
 .agregar-productos h1 {
@@ -184,7 +184,7 @@ main{
 }
 
 .campo-completo{
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
     border-style: solid;
     border-color: var(--color-secundario);
@@ -317,6 +317,10 @@ main{
     .agregar-productos h1{
         font-size: 18px;
         padding-bottom: 10px;
+    }
+
+    .campo-completo{
+        width: 100%;
     }
 
     .b-tap{

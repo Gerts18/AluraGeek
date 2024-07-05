@@ -7,7 +7,7 @@ async function eliminarProducto(id){
     try{
         await conexiones.eliminarProducto(id);
         const producto = document.querySelector(`#${id}`);
-        listaProductos.removeChild(producto);
+        const remover = listaProductos.removeChild(producto);
         await mostrarMensajePersonalizado('productoEliminado');
     }catch(error){
         await mostrarMensajePersonalizado('errorEliminar', error);

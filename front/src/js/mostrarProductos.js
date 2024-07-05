@@ -12,7 +12,7 @@ export default function crearProducto(imagen,nombre,precio, id){ //Funcion para 
     `
     <img class="imagen-producto" src=${imagen} alt="">
     <h2 class="nombre-producto">${nombre} </h2>
-    <div class="info" id=${id}>
+    <div class="info">
         <p class="precio">${precio}</p>
         <img class="icono-eliminar" src="./imagenes/icon_trash.svg" alt="">
     </div>  

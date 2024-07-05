@@ -2,12 +2,12 @@
 
 <h1>Pagina Web para Administración de Productos - AluraGeek</h1>
 <p>
-Este proyecto es una página web para la administración de productos, desarrollada con Vite, JavaScript vanilla, HTML y CSS. La aplicación sigue una lógica REST API para manejar productos a través de un servidor. Incluye funcionalidades para mostrar, agregar y eliminar productos, además de validaciones y notificaciones personalizadas.
+Este proyecto es una página web para la administración de productos, desarrollada con JavaScript, HTML y CSS. La aplicación se desarrollo siguiendo principios REST para manejar productos a través de un servidor. Incluye funcionalidades para mostrar, agregar y eliminar productos, además de validaciones y notificaciones personalizadas.
 </p>
 
 ![Screenshot 2024-07-05 110003](https://github.com/Gerts18/AluraGeek/assets/105231388/e08d21b6-0b1d-4f2a-8e6e-e30bcc2e0ea4)
 
-<h2>Pruebas</h2>
+<h2>Demo</h2>
 <p>Puedes acceder a la pagina muestra subida con el siguiente link: <a href="https://alura-geek-five-psi.vercel.app/">Alura Geek</a> </p>
 <p>Tambien puedes acceder al album usado para proporcionar las imagenes de los productos de este proyecto: <a href="https://ibb.co/album/C6kd6X">imgbb de Alura Geek</a> </p>
 
@@ -79,8 +79,11 @@ Este proyecto es una página web para la administración de productos, desarroll
 
 ![responsive](https://github.com/Gerts18/AluraGeek/assets/105231388/a4bcfead-51f7-4f00-8d58-a5cfb4effea0)
 
+<h2>Observaciones</h2>
+<p>Para la demo el servidor se subio en una instrancia gratuita, lo cual causa que con inactividad se apague, por lo cual lo mas seguro es que cuando entres por primera vez no te carguen los productos, solo es cuestion de esperar unos minutos y recargar la pagina para que puedas probar las funcionalidades completas y te carguen los productos, gracias por la comprension. </p>
+
+<p>Es de notar que el diseño va dirigido a productos Geek y de la cultura pop en general. Puedes cambiar el diseño a tu gusto para que se adapte al tipo de productos que quieres administrar.</p>
+
 <h2>Contribuciones</h2>
 <p>Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de enviar un pull request.</p>
 
-<h2>Observaciones</h2>
-<p>Es de notar que el diseño va dirigido a productos Geek y de la cultura pop en general. Puedes cambiar el diseño a tu gusto para que se adapte al tipo de productos que quieres administrar.</p>

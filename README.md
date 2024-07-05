@@ -40,10 +40,8 @@ Este proyecto es una página web para la administración de productos, desarroll
             <pre><code>git clone https://github.com/tu-usuario/AluraGeek.git</code></pre>
         </li>
         <li>Instala las dependencias:
-            <pre><code>
-            cd servidor/front
-            npm install
-            </code></pre>
+            <pre><code> cd servidor/front 
+                npm install</code></pre>
         </li>
         <li>Inicia el servidor json-server:
             <pre><code>
